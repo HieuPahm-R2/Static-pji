@@ -23,16 +23,16 @@ const router = createBrowserRouter([
                 element: <AiDiagnosisSuggestion />
             },
             {
-                path: "table-patients",
+                path: "/Static-pji/table-patients",
                 element: <PatientTable />
             },
 
             {
-                path: "chart-testing",
+                path: "/Static-pji/chart-testing",
                 element: <ChartTesting />
             },
             {
-                path: "compare-result",
+                path: "/Static-pji/compare-result",
                 element: <CompareResult />
             },
 

@@ -35,16 +35,16 @@ export const LayoutClient = () => {
   ];
 
   const menuItems = [
-    { path: '/', label: 'Chẩn đoán và đề xuất điều trị', icon: 'person', step: 'Tích hợp AI' },
-    { path: '/table-patients', label: 'Quản lý bệnh án', icon: 'clinical_notes', step: "Thông tin" },
-    { path: '/chart-testing', label: 'Biểu đồ chỉ số viêm', icon: 'history', step: "Giám sát kết quả" },
-    { path: '/compare-result', label: 'So sánh kết quả', icon: 'compare', step: "Kết quả của AI và bác sĩ" },
+    { path: '/Static-pji', label: 'Chẩn đoán và đề xuất điều trị', icon: 'person', step: 'Tích hợp AI' },
+    { path: '/Static-pji/table-patients', label: 'Quản lý bệnh án', icon: 'clinical_notes', step: "Thông tin" },
+    { path: '/Static-pji/chart-testing', label: 'Biểu đồ chỉ số viêm', icon: 'history', step: "Giám sát kết quả" },
+    { path: '/Static-pji/compare-result', label: 'So sánh kết quả', icon: 'compare', step: "Kết quả của AI và bác sĩ" },
   ];
 
   // Helper to check if a route is active (or if it's the root path)
   const isActive = (path: string) => {
-    if (path === '/' && location.pathname === '/') return true;
-    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    if (path === '/Static-pji' && location.pathname === '/Static-pji') return true;
+    if (path !== '/Static-pji' && location.pathname.startsWith(path)) return true;
     return false;
   };
 

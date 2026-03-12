@@ -10,7 +10,7 @@ import CompareResult from "@/pages/user/CompareResult";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/Static-pji",
         element: (
             <PatientProvider>
                 <LayoutClient />

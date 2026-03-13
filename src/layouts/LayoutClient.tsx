@@ -43,8 +43,8 @@ export const LayoutClient = () => {
 
   // Helper to check if a route is active (or if it's the root path)
   const isActive = (path: string) => {
-    if (path === '/Static-pji' && location.pathname === '/Static-pji') return true;
-    if (path !== '/Static-pji' && location.pathname.startsWith(path)) return true;
+    if (path === '/' && location.pathname === '/') return true;
+    if (path !== '/' && location.pathname.startsWith(path)) return true;
     return false;
   };
 
